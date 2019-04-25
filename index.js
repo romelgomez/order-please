@@ -34,6 +34,42 @@
 function urOrderPls(inputStr) {
   // your code here
 
+  var fewWordsList =  inputStr.split(' ');
+  
+  let one	= [];
+  let two	= [];
+  let three	= [];
+  let four	= [];
+  let five	= [];
+  let six	= [];
+  let seven	= [];
+  let eight	= [];
+  let nine	= [];
+
+  for (let i=0; i<fewWordsList.length; i++) {
+    if(fewWordsList[i].indexOf('1') >= 0){
+      one.push(fewWordsList[i]);
+    } else if (fewWordsList[i].indexOf('2') >= 0) {
+      two.push(fewWordsList[i]);
+    } else if (fewWordsList[i].indexOf('3') >= 0) {
+      three.push(fewWordsList[i]); 
+    } else if (fewWordsList[i].indexOf('4') >= 0) {
+      four.push(fewWordsList[i]);
+    } else if (fewWordsList[i].indexOf('5') >= 0) {
+      five.push(fewWordsList[i]);
+    } else if (fewWordsList[i].indexOf('6') >= 0)  {
+      six.push(fewWordsList[i]);
+    } else if (fewWordsList[i].indexOf('7') >= 0) {
+      seven.push(fewWordsList[i])
+    } else if (fewWordsList[i].indexOf('8') >= 0) {
+      eight.push(fewWordsList[i]); 
+    } else if (fewWordsList[i].indexOf('9') >= 0) {
+      nine.push(fewWordsList[i]) 
+    }
+  }
+
+  return one.concat(two, three, four, five, six, seven, eight, nine).join(' ');
+  
 
 }
 
