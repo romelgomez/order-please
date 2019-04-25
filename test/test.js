@@ -4,7 +4,7 @@ const urOrderPls = require('../index.js');
 
 describe('String Order', function() {
 
-  it('should return an empty string', function () {
+  it('should return an empty string when given an empty string', function () {
     urOrderPls('').should.eql('');
   });
 
